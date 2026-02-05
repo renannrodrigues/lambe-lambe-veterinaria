@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mantenha seu pet protegido com vacinas essenciais. Protocolo completo para cães e gatos. Agende a vacinação pelo WhatsApp!">
+    <meta name="keywords" content="vacinação pet, vacina cachorro, vacina gato, veterinária bento gonçalves">
+    
+    <title>Vacinação de Cães e Gatos em Bento Gonçalves | Lambe Lambe Veterinária</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#25D366',
+                        secondary: '#128C7E',
+                        accent: '#34B7F1',
+                        dark: '#1F2937',
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    
+    <!-- Meta Pixel Code (Placeholder) -->
+    <script>
+        // Meta Pixel será inserido aqui
+        // fbq('track', 'PageView');
+    </script>
+</head>
+<body class="font-sans bg-gray-50">
+
+    <!-- Header Simplificado -->
+    <header class="fixed w-full top-0 z-50 bg-white shadow-md">
+        <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <a href="index.html" class="flex items-center space-x-2">
+                <i class="fas fa-paw text-3xl text-primary"></i>
+                <span class="text-2xl font-bold text-dark">Lambe Lambe</span>
+            </a>
+            
+            <a href="https://wa.me/5554999999999?text=Olá!%20Gostaria%20de%20agendar%20a%20vacinação%20do%20meu%20pet.%20Pode%20me%20passar%20os%20valores%20e%20horários%20disponíveis?" 
+               target="_blank" 
+               class="bg-primary hover:bg-secondary text-white px-6 py-3 rounded-full transition font-semibold">
+                <i class="fab fa-whatsapp mr-2"></i> <span class="hidden sm:inline">Agendar</span> WhatsApp
+            </a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 bg-gradient-to-br from-blue-500 to-blue-700 text-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="inline-block bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
+                    <span class="text-sm font-semibold">✓ Protocolo Completo de Vacinação</span>
+                </div>
+                
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">
+                    Mantenha seu pet protegido: agende a vacinação hoje mesmo
+                </h1>
+                
+                <p class="text-xl mb-8">
+                    Vacinas essenciais para cães e gatos com acompanhamento veterinário em Bento Gonçalves
+                </p>
+                
+                <a href="https://wa.me/5554999999999?text=Olá!%20Gostaria%20de%20agendar%20a%20vacinação%20do%20meu%20pet.%20Pode%20me%20passar%20os%20valores%20e%20horários%20disponíveis?" 
+                   target="_blank"
+                   onclick="LambeLambe.trackWhatsAppClick('Hero CTA - Vacinação')"
+                   class="inline-block bg-primary hover:bg-secondary text-white px-10 py-4 rounded-full text-lg font-bold transition transform hover:scale-105 shadow-2xl">
+                    <i class="fab fa-whatsapp mr-2"></i> Agendar Vacinação pelo WhatsApp
+                </a>
+                
+                <p class="mt-4 text-sm opacity-90">
+                    <i class="fas fa-clock mr-1"></i> Resposta rápida • <i class="fas fa-shield-alt mr-1"></i> Atendimento seguro
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Por Que Vacinar -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Por que vacinar seu pet?</h2>
+                <p class="text-xl text-gray-600">Proteção essencial para uma vida longa e saudável</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-shield-virus text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-2">Proteção Contra Doenças Graves</h3>
+                    <p class="text-gray-600">Previne doenças fatais como cinomose, parvovirose e raiva</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-users text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-2">Previne Epidemias</h3>
+                    <p class="text-gray-600">Protege não só seu pet, mas toda a comunidade animal</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-plane-departure text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-2">Exigência para Viagens</h3>
+                    <p class="text-gray-600">Necessário para hospedagem, viagens e eventos</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-gradient-to-br from-red-400 to-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-heart text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-2">Aumenta Expectativa de Vida</h3>
+                    <p class="text-gray-600">Pets vacinados vivem mais e com mais qualidade</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vacinas Disponíveis -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Vacinas Disponíveis</h2>
+                <p class="text-xl text-gray-600">Protocolo completo para cães e gatos</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <!-- Vacinas para Cães -->
+                <div class="bg-white rounded-2xl shadow-lg p-8">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-dog text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-dark">Para Cães</h3>
+                    </div>
+                    
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-syringe text-primary text-xl mr-3 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-dark">V10 / V8</h4>
+                                <p class="text-gray-600 text-sm">Protege contra cinomose, parvovirose, hepatite e outras</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-syringe text-primary text-xl mr-3 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-dark">Antirrábica</h4>
+                                <p class="text-gray-600 text-sm">Obrigatória por lei, protege contra a raiva</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-syringe text-primary text-xl mr-3 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-dark">Gripe Canina (Tosse dos Canis)</h4>
+                                <p class="text-gray-600 text-sm">Previne problemas respiratórios</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-syringe text-primary text-xl mr-3 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-dark">Leishmaniose</h4>
+                                <p class="text-gray-600 text-sm">Proteção contra doença transmitida por mosquitos</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Vacinas para Gatos -->
+                <div class="bg-white rounded-2xl shadow-lg p-8">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-cat text-2xl text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-dark">Para Gatos</h3>
+                    </div>
+                    
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-syringe text-primary text-xl mr-3 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-dark">V4 / V5 (Quádrupla/Quíntupla)</h4>
+                                <p class="text-gray-600 text-sm">Protege contra rinotraqueíte, calicivirose e outras</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-syringe text-primary text-xl mr-3 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-dark">Antirrábica</h4>
+                                <p class="text-gray-600 text-sm">Obrigatória por lei, protege contra a raiva</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-syringe text-primary text-xl mr-3 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-dark">Leucemia Felina (FeLV)</h4>
+                                <p class="text-gray-600 text-sm">Previne doença grave que afeta o sistema imunológico</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-syringe text-primary text-xl mr-3 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-dark">Giardia</h4>
+                                <p class="text-gray-600 text-sm">Proteção contra parasita intestinal</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Como Funciona -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Como funciona</h2>
+                <p class="text-xl text-gray-600">Processo simples e rápido</p>
+            </div>
+
+            <div class="grid md:grid-cols-4 gap-8 max-w-6xl mx-auto">
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-4 text-3xl font-bold">
+                        1
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-2">Entre em Contato</h3>
+                    <p class="text-gray-600">Envie uma mensagem pelo WhatsApp</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-4 text-3xl font-bold">
+                        2
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-2">Agendamos o Horário</h3>
+                    <p class="text-gray-600">Escolha o melhor dia e horário para você</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-4 text-3xl font-bold">
+                        3
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-2">Aplicação Profissional</h3>
+                    <p class="text-gray-600">Vacinação com acompanhamento veterinário</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-4 text-3xl font-bold">
+                        4
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-2">Cartão Atualizado</h3>
+                    <p class="text-gray-600">Registro completo no cartão de vacinação</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prova Social -->
+    <section class="py-16 bg-gradient-to-br from-blue-50 to-green-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12 text-center">
+                    <div class="mb-8">
+                        <div class="inline-block bg-primary/10 text-primary px-6 py-3 rounded-full font-bold text-xl mb-4">
+                            Mais de 500 vacinas aplicadas este ano
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-8 mb-8">
+                        <div class="bg-gray-50 p-6 rounded-xl">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center text-white font-bold mr-3">
+                                    JS
+                                </div>
+                                <div class="text-left">
+                                    <h4 class="font-bold">João Santos</h4>
+                                    <div class="flex text-yellow-400 text-sm">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 italic text-left">
+                                "Sempre levo a Mel para vacinar aqui. O atendimento é excelente e os preços são justos!"
+                            </p>
+                        </div>
+
+                        <div class="bg-gray-50 p-6 rounded-xl">
+                            <div class="flex items-center mb-4">
+                                <div class="w-12 h-12 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full flex items-center justify-center text-white font-bold mr-3">
+                                    CF
+                                </div>
+                                <div class="text-left">
+                                    <h4 class="font-bold">Carla Fernandes</h4>
+                                    <div class="flex text-yellow-400 text-sm">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 italic text-left">
+                                "Equipe super atenciosa! Explicaram tudo sobre o calendário vacinal do meu cachorrinho."
+                            </p>
+                        </div>
+                    </div>
+
+                    <a href="https://wa.me/5554999999999?text=Olá!%20Gostaria%20de%20agendar%20a%20vacinação%20do%20meu%20pet.%20Pode%20me%20passar%20os%20valores%20e%20horários%20disponíveis?" 
+                       target="_blank"
+                       onclick="LambeLambe.trackWhatsAppClick('Prova Social CTA - Vacinação')"
+                       class="inline-block bg-primary hover:bg-secondary text-white px-10 py-4 rounded-full text-lg font-bold transition transform hover:scale-105 shadow-lg">
+                        <i class="fab fa-whatsapp mr-2"></i> Agendar Minha Vacinação Agora
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Dúvidas Frequentes</h2>
+            </div>
+
+            <div class="max-w-3xl mx-auto space-y-4">
+                <div class="accordion-item bg-gray-50 rounded-lg">
+                    <button class="accordion-header w-full text-left p-6 font-bold text-dark flex items-center justify-between">
+                        <span>Quando devo vacinar meu filhote?</span>
+                        <i class="fas fa-chevron-down text-primary"></i>
+                    </button>
+                    <div class="accordion-content px-6 pb-6">
+                        <p class="text-gray-600">O protocolo vacinal para filhotes geralmente começa entre 6 e 8 semanas de idade, com reforços a cada 21-30 dias até completar 16 semanas. Após isso, são necessários reforços anuais.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item bg-gray-50 rounded-lg">
+                    <button class="accordion-header w-full text-left p-6 font-bold text-dark flex items-center justify-between">
+                        <span>As vacinas têm efeitos colaterais?</span>
+                        <i class="fas fa-chevron-down text-primary"></i>
+                    </button>
+                    <div class="accordion-content px-6 pb-6">
+                        <p class="text-gray-600">Efeitos colaterais são raros e geralmente leves, como leve apatia ou dor no local da aplicação. Casos graves são extremamente raros. Nossa equipe está preparada para qualquer eventualidade.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item bg-gray-50 rounded-lg">
+                    <button class="accordion-header w-full text-left p-6 font-bold text-dark flex items-center justify-between">
+                        <span>Preciso vacinar meu pet todos os anos?</span>
+                        <i class="fas fa-chevron-down text-primary"></i>
+                    </button>
+                    <div class="accordion-content px-6 pb-6">
+                        <p class="text-gray-600">Sim! Os reforços anuais são essenciais para manter a imunidade do seu pet. Algumas vacinas podem ter intervalos diferentes, por isso é importante seguir o calendário recomendado pelo veterinário.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item bg-gray-50 rounded-lg">
+                    <button class="accordion-header w-full text-left p-6 font-bold text-dark flex items-center justify-between">
+                        <span>Posso vacinar meu pet em casa?</span>
+                        <i class="fas fa-chevron-down text-primary"></i>
+                    </button>
+                    <div class="accordion-content px-6 pb-6">
+                        <p class="text-gray-600">Não recomendamos! A vacinação deve ser feita por um médico veterinário em ambiente adequado, com as vacinas armazenadas corretamente e com acompanhamento profissional para garantir segurança e eficácia.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="py-20 bg-gradient-to-br from-blue-600 to-green-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-5xl font-bold mb-6">
+                Proteja seu pet agora!
+            </h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">
+                Agende a vacinação pelo WhatsApp e garanta a saúde do seu melhor amigo
+            </p>
+            <a href="https://wa.me/5554999999999?text=Olá!%20Gostaria%20de%20agendar%20a%20vacinação%20do%20meu%20pet.%20Pode%20me%20passar%20os%20valores%20e%20horários%20disponíveis?" 
+               target="_blank"
+               onclick="LambeLambe.trackWhatsAppClick('CTA Final - Vacinação')"
+               class="inline-block bg-white text-blue-600 px-10 py-4 rounded-full text-lg font-bold transition transform hover:scale-105 shadow-2xl hover:shadow-3xl">
+                <i class="fab fa-whatsapp mr-2"></i> Agendar Agora pelo WhatsApp
+            </a>
+            <p class="mt-6 text-sm opacity-90">
+                <i class="fas fa-check-circle mr-2"></i> Resposta rápida
+                <i class="fas fa-check-circle ml-4 mr-2"></i> Atendimento personalizado
+                <i class="fas fa-check-circle ml-4 mr-2"></i> Profissionais experientes
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer Simples -->
+    <footer class="bg-dark text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <div class="flex items-center justify-center mb-4">
+                <i class="fas fa-paw text-2xl text-primary mr-2"></i>
+                <span class="text-xl font-bold">Lambe Lambe Veterinária</span>
+            </div>
+            <p class="text-gray-400 mb-4">Bento Gonçalves - RS</p>
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="index.html" class="text-gray-400 hover:text-primary transition">Home</a>
+                <a href="castracao.html" class="text-gray-400 hover:text-primary transition">Castração</a>
+                <a href="consultas-exames.html" class="text-gray-400 hover:text-primary transition">Consultas</a>
+            </div>
+            <p class="text-gray-500 text-sm">&copy; 2026 Lambe Lambe Veterinária. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Sticky Footer Mobile -->
+    <div class="fixed bottom-0 left-0 right-0 bg-primary p-4 md:hidden z-50 shadow-2xl">
+        <a href="https://wa.me/5554999999999?text=Olá!%20Gostaria%20de%20agendar%20a%20vacinação%20do%20meu%20pet.%20Pode%20me%20passar%20os%20valores%20e%20horários%20disponíveis?" 
+           target="_blank"
+           onclick="LambeLambe.trackWhatsAppClick('Sticky Footer - Vacinação')"
+           class="block text-center text-white font-bold text-lg">
+            <i class="fab fa-whatsapp mr-2"></i> Agendar Vacinação
+        </a>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

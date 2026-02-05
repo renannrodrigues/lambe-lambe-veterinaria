@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cuidado com amor para o seu pet em Bento Gonçalves. Vacinação, castração, consultas e exames. Agende via WhatsApp!">
+    <meta name="keywords" content="veterinária, bento gonçalves, vacina cachorro, castração, consulta veterinária">
+    <meta name="author" content="Lambe Lambe Veterinária">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lambelambe.vet.br/">
+    <meta property="og:title" content="Lambe Lambe Veterinária | Clínica Veterinária em Bento Gonçalves">
+    <meta property="og:description" content="Cuidado com amor para o seu pet. Agende via WhatsApp!">
+    <meta property="og:image" content="https://lambelambe.vet.br/images/og-image.jpg">
+
+    <title>Lambe Lambe Veterinária | Clínica Veterinária em Bento Gonçalves - RS</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#25D366',
+                        secondary: '#128C7E',
+                        accent: '#34B7F1',
+                        dark: '#1F2937',
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans">
+
+    <!-- Header -->
+    <header id="header" class="fixed w-full top-0 z-50 transition-all duration-300">
+        <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center">
+                <a href="/" class="flex items-center space-x-2">
+                    <i class="fas fa-paw text-3xl text-primary"></i>
+                    <span class="text-2xl font-bold text-white">Lambe Lambe</span>
+                </a>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="/" class="text-white hover:text-primary transition">Home</a>
+                <div class="relative group">
+                    <button class="text-white hover:text-primary transition flex items-center">
+                        Serviços <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                    </button>
+                    <div class="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                        <a href="vacinacao.html" class="block px-6 py-3 hover:bg-gray-50 transition">
+                            <i class="fas fa-syringe text-primary mr-2"></i> Vacinação
+                        </a>
+                        <a href="castracao.html" class="block px-6 py-3 hover:bg-gray-50 transition">
+                            <i class="fas fa-heart text-primary mr-2"></i> Castração
+                        </a>
+                        <a href="consultas-exames.html" class="block px-6 py-3 hover:bg-gray-50 transition">
+                            <i class="fas fa-stethoscope text-primary mr-2"></i> Consultas e Exames
+                        </a>
+                    </div>
+                </div>
+                <a href="#sobre" class="text-white hover:text-primary transition">Sobre</a>
+                <a href="#contato" class="text-white hover:text-primary transition">Contato</a>
+                <a href="https://wa.me/5554999999999?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20da%20Lambe%20Lambe%20Veterinária" target="_blank" class="bg-primary hover:bg-secondary text-white px-6 py-2 rounded-full transition font-semibold">
+                    <i class="fab fa-whatsapp mr-2"></i> WhatsApp
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobileMenuBtn" class="md:hidden text-white text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="md:hidden bg-white shadow-lg transform -translate-y-full opacity-0 transition-all duration-300">
+            <div class="container mx-auto px-4 py-6">
+                <a href="/" class="block py-3 border-b hover:text-primary transition">Home</a>
+                <a href="vacinacao.html" class="block py-3 border-b hover:text-primary transition">
+                    <i class="fas fa-syringe text-primary mr-2"></i> Vacinação
+                </a>
+                <a href="castracao.html" class="block py-3 border-b hover:text-primary transition">
+                    <i class="fas fa-heart text-primary mr-2"></i> Castração
+                </a>
+                <a href="consultas-exames.html" class="block py-3 border-b hover:text-primary transition">
+                    <i class="fas fa-stethoscope text-primary mr-2"></i> Consultas e Exames
+                </a>
+                <a href="#sobre" class="block py-3 border-b hover:text-primary transition">Sobre</a>
+                <a href="#contato" class="block py-3 border-b hover:text-primary transition">Contato</a>
+                <a href="https://wa.me/5554999999999?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20da%20Lambe%20Lambe%20Veterinária" target="_blank" class="block py-3 bg-primary text-white text-center rounded-lg mt-4 font-semibold">
+                    <i class="fab fa-whatsapp mr-2"></i> WhatsApp
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative h-screen flex items-center justify-center text-white">
+        <!-- Background Image -->
+        <div class="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-blue-700/80 z-0">
+            <!-- Placeholder para imagem de fundo -->
+            <div class="absolute inset-0 bg-cover bg-center opacity-30" style="background-image: url('https://images.unsplash.com/photo-1450778869180-41d0601e046e?q=80&w=2000');"></div>
+        </div>
+
+        <div class="container mx-auto px-4 z-10 text-center">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
+                    Cuidado com amor para o seu melhor amigo em Bento Gonçalves
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 animate-fade-in-delay">
+                    Clínica veterinária completa com profissionais qualificados e atendimento humanizado
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-delay-2">
+                    <a href="https://wa.me/5554999999999?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20da%20Lambe%20Lambe%20Veterinária" target="_blank" class="bg-primary hover:bg-secondary text-white px-8 py-4 rounded-full text-lg font-semibold transition transform hover:scale-105 shadow-lg">
+                        <i class="fab fa-whatsapp mr-2"></i> Agendar Consulta via WhatsApp
+                    </a>
+                    <a href="#servicos" class="bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white px-8 py-4 rounded-full text-lg font-semibold transition border-2 border-white">
+                        Conheça Nossos Serviços
+                    </a>
+                </div>
+                <div class="mt-8 flex justify-center gap-8 text-sm">
+                    <div class="flex items-center">
+                        <i class="fas fa-shield-alt text-primary text-2xl mr-2"></i>
+                        <span>CRMV Credenciado</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-map-marker-alt text-primary text-2xl mr-2"></i>
+                        <span>Bento Gonçalves - RS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i class="fas fa-chevron-down text-white text-2xl"></i>
+        </div>
+    </section>
+
+    <!-- Serviços em Destaque -->
+    <section id="servicos" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-dark mb-4">Nossos Serviços</h2>
+                <p class="text-xl text-gray-600">Cuidado completo para a saúde do seu pet</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card Vacinação -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 hover:shadow-2xl">
+                    <div class="bg-gradient-to-br from-blue-500 to-blue-600 p-8 text-white text-center">
+                        <i class="fas fa-syringe text-6xl mb-4"></i>
+                        <h3 class="text-2xl font-bold">Vacinação Completa</h3>
+                    </div>
+                    <div class="p-8">
+                        <p class="text-gray-600 mb-6">
+                            Proteja seu pet com vacinas essenciais para cães e gatos. 
+                            Protocolo completo e cartão de vacinação atualizado.
+                        </p>
+                        <ul class="space-y-2 mb-6 text-gray-700">
+                            <li><i class="fas fa-check text-primary mr-2"></i> V8/V10 para cães</li>
+                            <li><i class="fas fa-check text-primary mr-2"></i> V4/V5 para gatos</li>
+                            <li><i class="fas fa-check text-primary mr-2"></i> Antirrábica</li>
+                            <li><i class="fas fa-check text-primary mr-2"></i> Gripe canina</li>
+                        </ul>
+                        <a href="vacinacao.html" class="block text-center bg-primary hover:bg-secondary text-white py-3 rounded-lg font-semibold transition">
+                            Agendar Vacinação <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card Castração -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 hover:shadow-2xl">
+                    <div class="bg-gradient-to-br from-pink-500 to-pink-600 p-8 text-white text-center">
+                        <i class="fas fa-heart text-6xl mb-4"></i>
+                        <h3 class="text-2xl font-bold">Castração Responsável</h3>
+                    </div>
+                    <div class="p-8">
+                        <p class="text-gray-600 mb-6">
+                            Cirurgia segura com acompanhamento completo pré e pós-operatório. 
+                            Mais saúde e bem-estar para o seu pet.
+                        </p>
+                        <ul class="space-y-2 mb-6 text-gray-700">
+                            <li><i class="fas fa-check text-primary mr-2"></i> Consulta pré-operatória</li>
+                            <li><i class="fas fa-check text-primary mr-2"></i> Cirurgia segura</li>
+                            <li><i class="fas fa-check text-primary mr-2"></i> Medicação inclusa</li>
+                            <li><i class="fas fa-check text-primary mr-2"></i> Acompanhamento total</li>
+                        </ul>
+                        <a href="castracao.html" class="block text-center bg-primary hover:bg-secondary text-white py-3 rounded-lg font-semibold transition">
+                            Saber Mais <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card Consultas -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300 hover:shadow-2xl">
+                    <div class="bg-gradient-to-br from-green-500 to-green-600 p-8 text-white text-center">
+                        <i class="fas fa-stethoscope text-6xl mb-4"></i>
+                        <h3 class="text-2xl font-bold">Consultas e Exames</h3>
+                    </div>
+                    <div class="p-8">
+                        <p class="text-gray-600 mb-6">
+                            Check-up completo com profissionais experientes. 
+                            Exames laboratoriais e de imagem disponíveis.
+                        </p>
+                        <ul class="space-y-2 mb-6 text-gray-700">
+                            <li><i class="fas fa-check text-primary mr-2"></i> Exame clínico completo</li>
+                            <li><i class="fas fa-check text-primary mr-2"></i> Exames laboratoriais</li>
+                            <li><i class="fas fa-check text-primary mr-2"></i> Diagnóstico preciso</li>
+                            <li><i class="fas fa-check text-primary mr-2"></i> Orientação nutricional</li>
+                        </ul>
+                        <a href="consultas-exames.html" class="block text-center bg-primary hover:bg-secondary text-white py-3 rounded-lg font-semibold transition">
+                            Agendar Consulta <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre a Clínica -->
+    <section id="sobre" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold text-dark mb-6">Cuidando com amor dos pets de Bento Gonçalves</h2>
+                    <p class="text-lg text-gray-700 mb-6">
+                        A Lambe Lambe Veterinária nasceu do amor pelos animais e do compromisso 
+                        com a saúde e bem-estar dos pets da nossa região.
+                    </p>
+                    <p class="text-lg text-gray-700 mb-6">
+                        Com uma equipe qualificada e apaixonada pelo que faz, oferecemos 
+                        atendimento humanizado e personalizado para cada paciente, tratando 
+                        cada pet como se fosse da nossa própria família.
+                    </p>
+                    <div class="space-y-3">
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-primary text-xl mr-3 mt-1"></i>
+                            <span class="text-gray-700">Profissionais experientes e certificados</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-primary text-xl mr-3 mt-1"></i>
+                            <span class="text-gray-700">Atendimento humanizado e acolhedor</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-primary text-xl mr-3 mt-1"></i>
+                            <span class="text-gray-700">Equipamentos modernos</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-primary text-xl mr-3 mt-1"></i>
+                            <span class="text-gray-700">Localização privilegiada em Bento Gonçalves</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-primary text-xl mr-3 mt-1"></i>
+                            <span class="text-gray-700">Preços justos e transparentes</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="rounded-2xl overflow-hidden shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1628009368231-7bb7cfcb0def?q=80&w=800" alt="Veterinária" class="w-full h-full object-cover">
+                    </div>
+                    <div class="absolute -bottom-6 -left-6 bg-primary text-white p-6 rounded-xl shadow-lg">
+                        <p class="text-4xl font-bold">+1000</p>
+                        <p class="text-sm">Pets Atendidos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="py-20 bg-gradient-to-br from-blue-50 to-green-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-dark mb-4">O que nossos clientes dizem</h2>
+                <p class="text-xl text-gray-600">Depoimentos de quem confia na gente</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Depoimento 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-16 h-16 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center text-white text-2xl font-bold">
+                            MS
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-bold text-dark">Maria Silva</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">
+                        "A equipe da Lambe Lambe cuidou do meu Bob com muito carinho 
+                        durante a castração. Fiquei tranquila o tempo todo e o pós-operatório 
+                        foi muito tranquilo. Super recomendo!"
+                    </p>
+                </div>
+
+                <!-- Depoimento 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-16 h-16 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center text-white text-2xl font-bold">
+                            JS
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-bold text-dark">João Santos</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">
+                        "Sempre levo a Mel para vacinar na Lambe Lambe. O atendimento 
+                        é excelente, preços justos e a localização é muito boa. 
+                        Confio totalmente na equipe!"
+                    </p>
+                </div>
+
+                <!-- Depoimento 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-16 h-16 bg-gradient-to-br from-pink-400 to-pink-600 rounded-full flex items-center justify-center text-white text-2xl font-bold">
+                            AO
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-bold text-dark">Ana Oliveira</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">
+                        "Descobri que meu Thor tinha um problema de pele e os veterinários 
+                        foram super atenciosos. Explicaram tudo direitinho e hoje ele está 
+                        100% curado. Gratidão!"
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato e Localização -->
+    <section id="contato" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-dark mb-4">Entre em Contato</h2>
+                <p class="text-xl text-gray-600">Estamos prontos para cuidar do seu pet</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Informações de Contato -->
+                <div>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-primary text-white w-12 h-12 rounded-lg flex items-center justify-center mr-4">
+                                <i class="fab fa-whatsapp text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-dark mb-1">WhatsApp</h4>
+                                <p class="text-gray-600">(54) 9 9999-9999</p>
+                                <a href="https://wa.me/5554999999999" target="_blank" class="text-primary hover:underline">Clique para conversar</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="bg-accent text-white w-12 h-12 rounded-lg flex items-center justify-center mr-4">
+                                <i class="fas fa-phone text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-dark mb-1">Telefone</h4>
+                                <p class="text-gray-600">(54) 3333-3333</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="bg-blue-500 text-white w-12 h-12 rounded-lg flex items-center justify-center mr-4">
+                                <i class="fas fa-map-marker-alt text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-dark mb-1">Endereço</h4>
+                                <p class="text-gray-600">Rua Exemplo, 123 - Centro<br>Bento Gonçalves - RS<br>CEP 95700-000</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="bg-green-500 text-white w-12 h-12 rounded-lg flex items-center justify-center mr-4">
+                                <i class="fas fa-clock text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-dark mb-1">Horário de Atendimento</h4>
+                                <p class="text-gray-600">
+                                    Segunda a Sexta: 8h às 18h<br>
+                                    Sábado: 8h às 12h<br>
+                                    Domingo: Fechado
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8">
+                        <a href="https://wa.me/5554999999999?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20da%20Lambe%20Lambe%20Veterinária" target="_blank" class="block text-center bg-primary hover:bg-secondary text-white py-4 rounded-lg font-semibold transition text-lg">
+                            <i class="fab fa-whatsapp mr-2"></i> Agendar pelo WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Mapa -->
+                <div>
+                    <div class="bg-gray-200 rounded-2xl overflow-hidden shadow-lg h-96">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27699.11234567890!2d-51.5188!3d-29.1689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951c3f6d3f6d3f6d%3A0x1234567890abcdef!2sBento%20Gon%C3%A7alves%2C%20RS!5e0!3m2!1spt-BR!2sbr!4v1234567890123!5m2!1spt-BR!2sbr"
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <!-- Sobre -->
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-paw text-3xl text-primary mr-2"></i>
+                        <span class="text-2xl font-bold">Lambe Lambe</span>
+                    </div>
+                    <p class="text-gray-400">
+                        Cuidado com amor para o seu melhor amigo em Bento Gonçalves.
+                    </p>
+                </div>
+
+                <!-- Serviços -->
+                <div>
+                    <h4 class="font-bold mb-4">Serviços</h4>
+                    <ul class="space-y-2">
+                        <li><a href="vacinacao.html" class="text-gray-400 hover:text-primary transition">Vacinação</a></li>
+                        <li><a href="castracao.html" class="text-gray-400 hover:text-primary transition">Castração</a></li>
+                        <li><a href="consultas-exames.html" class="text-gray-400 hover:text-primary transition">Consultas e Exames</a></li>
+                    </ul>
+                </div>
+
+                <!-- Links Úteis -->
+                <div>
+                    <h4 class="font-bold mb-4">Links Úteis</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#sobre" class="text-gray-400 hover:text-primary transition">Sobre Nós</a></li>
+                        <li><a href="#contato" class="text-gray-400 hover:text-primary transition">Contato</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition">Política de Privacidade</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition">Termos de Uso</a></li>
+                    </ul>
+                </div>
+
+                <!-- Redes Sociais -->
+                <div>
+                    <h4 class="font-bold mb-4">Redes Sociais</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-gray-700 hover:bg-primary rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-700 hover:bg-primary rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/5554999999999" target="_blank" class="w-10 h-10 bg-gray-700 hover:bg-primary rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 Lambe Lambe Veterinária. Todos os direitos reservados.</p>
+                <p class="mt-2 text-sm">CRMV-RS XXXXX</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/5554999999999?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20da%20Lambe%20Lambe%20Veterinária" target="_blank" id="whatsapp-float" class="fixed bottom-6 right-6 bg-primary hover:bg-secondary text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl transition transform hover:scale-110 z-50">
+        <i class="fab fa-whatsapp text-3xl"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
