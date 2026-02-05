@@ -1,5 +1,12 @@
 /* Custom Styles for Lambe Lambe Veterinária */
 
+
+/* Remove scroll horizontal desnecessário */
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
 /* Animações */
 @keyframes fadeIn {
     from {
